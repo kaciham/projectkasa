@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px;
+}
+
+.navbar svg:nth-child(2){
+    top: 5px;
+}
+
+.navbar-logo svg{
+    position: relative;
+    fill: var(--color1);
+    width: fit-content;
+    height: auto;
+    margin: 0px 5px;
+}
+
+.navbar-logo svg:nth-child(2){
+    top: 5px;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-item{
+    margin: 0px 25px;
+    font-size: 24px;
+    font-weight: 500;
+}

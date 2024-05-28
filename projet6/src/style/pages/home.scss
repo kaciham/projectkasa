@@ -1,0 +1,72 @@
+
+.home{
+    .background-div{
+        width: 90%;
+        height: 223px;
+        padding: 0px 20px;
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        background-image:url('../../assets/img/view2.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title{
+        text-align: center;
+        color: white;
+        text-shadow: 0px 2px black;
+        font-size: 46px;
+        font-weight: 700;
+        filter: brightness(190%);
+    }
+
+    .home-menu {
+        border-radius: 30px;
+        margin-top: 40px;
+        padding: 50px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        background-color: #F6F6F6;
+    }
+
+    .card {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: var(--color1);
+        border-radius: 10px;
+        padding: 3px;
+        color: white;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .card p {
+        display: flex;
+        align-items: flex-end;  
+        position: absolute;
+        font-weight: 700;
+        word-wrap:break-word;
+        padding: 10px;
+        font-size: 18px;
+
+    }
+    .card img:hover {
+        filter:grayscale(70%)
+    }
+}
