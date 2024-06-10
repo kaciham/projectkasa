@@ -15,18 +15,21 @@
 }
 
 .about-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
     color:var(--color3);
-    width:900px;
+   width: 100%;
+    position: relative;
+
     // height: 54px;
-    background-color: var(--color1);
+    background-color: white;
     // margin: 30px 0px;
     // padding: 10px 20px;
     border-radius: 5px;
     font-size: 24px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 
 }
 
@@ -35,10 +38,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 20px 0px;
     height: 54px;
     background-color: var(--color1);
     padding: 0px 10px;
+    border-radius: 10px;
 }
 
 .accordeon h2{
@@ -63,11 +67,15 @@
 }
 
 .text-accordeon{
-    height: auto;
+    // height: auto;
     background-color: rgb(255, 255, 255);
     color: black;
     position: relative;
-    padding: 20px;
+    padding: 5px 30px;
+    
+    width: 130%;
+    // text-align: center;
+    background-color: rgb(244, 244, 244);
 }
 
 .test-margin{
@@ -76,4 +84,5 @@
     flex-wrap: wrap;
     align-items: stretch;
     padding: 0;
+    width: 75%;
 }

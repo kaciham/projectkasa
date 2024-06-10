@@ -3,7 +3,7 @@ import React from 'react';
 const Host = ({ hostPic, hostName }) => {
     return (
         <div className="host">
-            <div >
+            <div className='host-name'>
                 <p>{hostName}</p>
             </div>
             <div >

@@ -1,0 +1,14 @@
+//about
+
+animation drop down
+width auto
+
+//home
+
+banner luminosity
+grid settings
+
+//AccordeonRentDetails
+
+owner section flexbox
+pic issues red and grey stars  

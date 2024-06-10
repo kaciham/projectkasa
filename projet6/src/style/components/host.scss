@@ -1,8 +1,16 @@
 .host {
     display: flex;
-    
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
 }
 
 .host img {
     border-radius: 50%;
+    height: 100px;
+}
+
+.host-name {
+    display: flex;
+
 }

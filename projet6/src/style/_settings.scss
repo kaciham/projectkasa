@@ -35,6 +35,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .renderRow {
@@ -58,4 +59,22 @@ a {
     color: #ffffff;
     padding: 5px 30px;
     height: 25px;
+}
+
+.lastRow {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+}
+
+.lastRowItemLeft {
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-left: 5px;
+}
+
+.lastRowItemRight {
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-left: 10%;
 }

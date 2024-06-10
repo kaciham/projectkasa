@@ -1,11 +1,11 @@
 .carrousel-container{
     display: flex;
-    width: 100%;
+    width: auto;
     background-color: rgba(127, 102, 102, 0.5);
     justify-content: center;
     position: relative;
     align-items: center;
-    height: 70vh;
+    height: 40vh;
     overflow: hidden;
 }   
 
@@ -19,13 +19,14 @@
 
 .img-slider{
  
-    object-fit: cover;
+    object-fit:fill;
     // flex-shrink: 0;
-    min-width: 100%;
-  min-height: 100%;
-  width: auto;
+    
+//     min-width: 100%;
+//   min-height: 100%;
   height: auto;
-  background-size: cover;
+  width: auto;
+//   background-size:contain;
   
 }
 .rightArrow {

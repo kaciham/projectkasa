@@ -25,7 +25,6 @@ const Star = ({ rating }) => {
 
     return (
         <div>
-            <p>{rating}</p>
             <div>{diplayStars()}</div>
         </div>
     );

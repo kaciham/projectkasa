@@ -8,6 +8,8 @@ import Carrousel from '../components/Carrousel';
 import Tag from '../components/Tag';
 import Host from './../components/Host';
 import Star from './../components/Star';
+import AccordeonDescription from '../components/AccordeonDescription';
+import AccordeonEquipment from './../components/AccordeonEquipment';
 
 
 const RentDetails = () => {
@@ -42,6 +44,9 @@ const RentDetails = () => {
             {item}
         </li>
     ))
+    //Description
+
+    const description = chosenRentDetails && chosenRentDetails.description;
 
     return (
         <div>
@@ -79,8 +84,18 @@ const RentDetails = () => {
                                     />
                                 </div>
                             </div>
-                            {/* //equip */}
-                            {/* //rate */}
+                            <div className='lastRow'>
+                                <div className='lastRowItemLeft'>
+                                    <AccordeonDescription
+                                        description={description}
+                                    />
+                                </div>
+                                <div className='lastRowItemRight'>
+                                    <AccordeonEquipment
+                                        equip={equip}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     )
                 }
