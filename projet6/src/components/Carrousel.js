@@ -14,9 +14,9 @@ const Carrousel = ({ slides }) => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     }
     return (
-        <div className="carrousel-container">
+        <div className="img-slider">
 
-            {length > 1 && (
+            {length >= 1 && (
                 <img
                     src={leftArrow} //Affichage des flèches seulement si length > 1
                     alt="gauche"

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-// import LocationDetails from './LocationDetails';
 import { NavLink } from 'react-router-dom';
 import Card from '../components/Card';
 

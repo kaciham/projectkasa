@@ -8,15 +8,15 @@
     top: 5px;
 }
 
-.navbar-logo svg{
+.navbar-logo div{
     position: relative;
     fill: var(--color1);
     width: fit-content;
-    height: auto;
+    height: 90%;
     margin: 0px 5px;
 }
 
-.navbar-logo svg:nth-child(2){
+.navbar-logo div:nth-child(2){
     top: 5px;
 }
 
@@ -28,4 +28,41 @@
     margin: 0px 25px;
     font-size: 24px;
     font-weight: 500;
+}
+
+.navbar-logo {
+    width: 100%;
+object-fit: cover;
+display: flex;
+}
+
+@media (max-width: 500px) {
+    .navbar-logo svg{
+        height: 20%;
+        width: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .item-logo{
+        width: 10px;
+        height: 10px;
+    }
+
+    .navbar{
+        margin: 5px;
+        height: 100px;
+    }
+
+    .navbar-menu{
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-item{
+        margin: 0px 5px;
+    }
+
+    .navbar-logo svg{
+        height: 20px;
+    }
 }

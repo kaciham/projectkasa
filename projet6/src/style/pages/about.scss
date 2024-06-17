@@ -86,3 +86,34 @@
     padding: 0;
     width: 75%;
 }
+
+@media (max-width: 500px) {
+    .background-div{
+        width: 90%;
+        height: 223px;
+        padding: 0px 20px;
+        border-radius: 50px;
+        background-color: rgb(8, 134, 245);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        background-image:url('../../assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash2.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .test-margin{
+        width: 90%;
+        
+    }
+    .text-accordeon {
+        width: 110%;
+    }
+
+}
+
+.about-main-page{
+width: 100%;
+}

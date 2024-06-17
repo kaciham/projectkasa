@@ -5,7 +5,7 @@ import Accordeon from '../components/Accordeon';
 
 const About = () => {
     return (
-        <div>
+        <div className='about-main-page'>
             <Navbar />
             <div className='page' >
                 <div className='background-div'>
