@@ -1,8 +1,9 @@
 .host {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .host img {
@@ -13,4 +14,14 @@
 .host-name {
     display: flex;
 
+}
+.host p{
+    color:#FF6060 ;
+}
+
+@media (max-width: 500px) {
+    .host img {
+        border-radius: 50%;
+        height: 50px;
+    }
 }

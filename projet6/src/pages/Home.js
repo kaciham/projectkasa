@@ -21,7 +21,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div >
+        <div className='page-settings'>
             <Navbar />
             <div className='home page div-center'>
                 <div className='background-div'>

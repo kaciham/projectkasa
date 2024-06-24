@@ -19,7 +19,7 @@ const Footer = () => {
                 </svg>
             </div>
             <div>
-                <h2>©2020 Kasa. All rights reserved</h2>
+                <h2>© 2020 Kasa. All rights reserved</h2>
             </div>
         </div>
     )

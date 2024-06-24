@@ -8,5 +8,16 @@ a:hover {
 }
 
 .notfound-item{
-  margin: 70px 0px;
+  margin: 50px 0px;
+}
+
+@media (max-width: 500px ) {
+  .notfound {
+    padding: 25px;
+  }
+
+  .notfound svg {
+    height: auto;
+    width: 70%;
+  }
 }

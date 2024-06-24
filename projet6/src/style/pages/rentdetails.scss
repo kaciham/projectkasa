@@ -3,3 +3,66 @@
     flex-direction: column;
     padding: 0px 10%;
 }
+
+.detailed{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-location h2 {
+    text-align: left;
+    color:#FF6060 ;
+    font-size: 24px;
+}
+.title-location h3 {
+    text-align: left;
+    color:black;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+
+.star{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;   
+}
+@media (max-width: 600px) {
+
+
+    .rentDetails-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .title-location{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .title-location-host{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .detailed {
+      
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .star-host{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        margin: 5px 0px;
+    }
+}

@@ -1,23 +1,20 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 30px 80px;
+    margin: 30px 40px 30px;
+}
+
+.navbar-item:hover {
+    border-bottom: solid dark 2px;
 }
 
 .navbar svg:nth-child(2){
     top: 5px;
 }
 
-.navbar-logo div{
-    position: relative;
-    fill: var(--color1);
-    width: fit-content;
-    height: 90%;
-    margin: 0px 5px;
-}
-
-.navbar-logo div:nth-child(2){
-    top: 5px;
+.nav{
+    display: flex;
+    align-items: center;    
 }
 
 .navbar-menu {
@@ -25,21 +22,29 @@
 }
 
 .navbar-item{
-    margin: 0px 25px;
-    font-size: 24px;
+    margin: 0px 15px;
+    font-size: calc(1rem + 0.8vw);
     font-weight: 500;
+
 }
 
 .navbar-logo {
-    width: 100%;
-object-fit: cover;
-display: flex;
+    display: flex;
+    align-items: center;
+    width: 75px;
+
 }
+.navbar-logo svg path{
+    height: 180px;
+    width: 70%;
+    flex-wrap: nowrap;
+}
+
 
 @media (max-width: 500px) {
     .navbar-logo svg{
-        height: 20%;
-        width: 20px;
+        height: 100 px;
+        width: 100%;
         flex-wrap: nowrap;
     }
 
@@ -50,7 +55,8 @@ display: flex;
 
     .navbar{
         margin: 5px;
-        height: 100px;
+        height: 50px;
+        padding: 0px 20px;
     }
 
     .navbar-menu{
@@ -60,9 +66,13 @@ display: flex;
 
     .navbar-item{
         margin: 0px 5px;
+        font-size: 16px;
+        font-weight: 500;
     }
 
-    .navbar-logo svg{
-        height: 20px;
+    .navbar-item:hover {
+        border-bottom: solid dark 2px;
     }
+
+  
 }

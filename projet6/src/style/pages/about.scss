@@ -1,8 +1,8 @@
 .background-div{
     width: 90%;
-    height: 223px;
+    height: 20vh;
     padding: 0px 20px;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: rgb(8, 134, 245);
     background-repeat: no-repeat;
     background-position: center;
@@ -29,7 +29,7 @@
     // padding: 10px 20px;
     border-radius: 5px;
     font-size: 24px;
-    margin: 10px 0px;
+
 
 }
 
@@ -38,13 +38,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
-    height: 54px;
+    margin: 0px 0px;
+    height: 50px;
     background-color: var(--color1);
     padding: 0px 10px;
     border-radius: 10px;
+    font-size: calc(0.5rem + 0.8vw);
 }
 
+.accordeonLeft {
+    margin-right: 15px;
+}
+
+.accordeonRight {
+    margin-left: 15px;
+}
 .accordeon h2{
     margin: 0px;
 }
@@ -76,6 +84,8 @@
     width: 130%;
     // text-align: center;
     background-color: rgb(244, 244, 244);
+    padding: 10px 10px 10px 10px;
+    font-size: 20px ;
 }
 
 .test-margin{
@@ -85,12 +95,21 @@
     align-items: stretch;
     padding: 0;
     width: 75%;
+    margin: 10px 0px;
 }
 
 @media (max-width: 500px) {
+
+    .accordeonLeft {
+        margin-right: 0px;
+    }
+    
+    .accordeonRight {
+        margin-left: 0px;
+    }
     .background-div{
         width: 90%;
-        height: 223px;
+        height: 15vh;
         padding: 0px 20px;
         border-radius: 50px;
         background-color: rgb(8, 134, 245);
@@ -102,16 +121,26 @@
         flex-direction: column;
         justify-content: center;
         margin: 20px 0px;
+        border-radius: 10px;
+
     }
 
+    .accordeon {
+        font-size: medium;
+        height: 30px;
+        margin: 0px;
+        width: 100%;
+    }
     .test-margin{
         width: 90%;
+        margin: 5px 0px ;
         
     }
     .text-accordeon {
         width: 110%;
+        font-size: 16px;
+        padding: 10px 10px 10px 10px;
     }
-
 }
 
 .about-main-page{

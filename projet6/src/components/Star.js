@@ -1,7 +1,7 @@
 import React from 'react';
 
-const greyStart = 'assets/img/greyStar.png';
-const redStar = 'assets/img/redStar.png';
+import greyStar from '../assets/img/greyStar.png';
+import redStar from '../assets/img/redStar.png';
 
 
 const Star = ({ rating }) => {
@@ -17,14 +17,14 @@ const Star = ({ rating }) => {
         }
 
         for (let i = 0; i < emptyStars; i++) {
-            stars.push(<img key={`empty-${i}`} src={greyStart} alt='grey star' />);
+            stars.push(<img key={`empty-${i}`} src={greyStar} alt='grey star' />);
         }
 
         return stars;
     }
 
     return (
-        <div>
+        <div className='star'>
             <div>{diplayStars()}</div>
         </div>
     );

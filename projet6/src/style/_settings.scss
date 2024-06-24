@@ -19,6 +19,7 @@ body {
     margin: 0px;
     padding: 0px;
     list-style-type:none;
+    min-height: 100vh;
 }
 
 a {
@@ -40,26 +41,36 @@ a {
 
 .renderRow {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .renderTag {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0px;
 
 }
 
 .renderTagItem {
-    font-weight: 700;
     display: flex;
     justify-content: center;
+    width: auto;
     align-items: center;
     background-color: #FF6060;
-    margin: 0px 5px;
+    margin: 0px 0px;
     border-radius: 10px;
     color: #ffffff;
     padding: 5px 30px;
-    height: 25px;
+    height: 20px;
+    font-weight: 700;
+    font-size: calc(0.6rem + 0.5vw);
+    white-space: nowrap;
+    border-radius: 5px;
 }
+
 
 .lastRow {
     display: grid;
@@ -69,12 +80,17 @@ grid-template-rows: 1fr;
 
 .lastRowItemLeft {
     border-radius: 20px;
-    margin-right: 10%;
-    margin-left: 5px;
 }
 
 .lastRowItemRight {
     border-radius: 20px;
-    margin-right: 5px;
-    margin-left: 10%;
+}
+
+
+@media (max-width: 500px) {
+    .lastRow{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }

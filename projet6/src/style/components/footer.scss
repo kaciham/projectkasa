@@ -5,11 +5,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center ;
-    margin: 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .logo-footer{
     margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 .footer svg {
@@ -22,4 +23,39 @@
 
 .footer svg:nth-child(2){
     top: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .footer svg {
+        position: relative;
+        fill: var(--color3);
+        width: 30px;
+        height: auto;
+        margin: 0px 5px;
+        
+    }
+
+    h2{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+    .logo-footer{
+        margin: 10px 0px;
+    }
+
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
 }

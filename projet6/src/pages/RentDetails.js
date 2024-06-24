@@ -56,41 +56,47 @@ const RentDetails = () => {
                     chosenRentDetails && (
                         <div key={params.id}>
                             <Carrousel key={params.id} slides={slidesPics} />
-                            <div className='renderRow' key={params.id}>
-                                <div key={params.id} >
-                                    <div>
-                                        <h2>{chosenRentDetails.title}</h2>
+                            <div className='detailed'>
+                                <div className='renderRow title-location-host' key={params.id} >
+                                    <div key={params.id} className='title-location ' >
+                                        <div>
+                                            <h2>{chosenRentDetails.title}</h2>
+                                        </div>
+                                        <div>
+                                            <h3>{chosenRentDetails.location}</h3>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h3>{chosenRentDetails.location}</h3>
+                                    <div className='renderTag'>
+                                        {tags.map((tag) => (
+                                            <Tag tag={tag} />
+                                        ))}
                                     </div>
                                 </div>
-                                <div >
-                                    <Host
-                                        key={params.id}
-                                        hostPic={chosenRentDetails.host.picture}
-                                        hostName={chosenRentDetails.host.name}
-                                    />
-                                </div>
-                            </div>
-                            <div className='renderRow'>
-                                <div className='renderTag'>
-                                    {tags.map((tag) => (
-                                        <Tag tag={tag} />
-                                    ))}
-                                </div>
-                                <div>
-                                    <Star rating={star}
-                                    />
+                                <div className='star-host'>
+                                    <div className='title-location'>
+                                        <Host
+                                            key={params.id}
+                                            hostPic={chosenRentDetails.host.picture}
+                                            hostName={chosenRentDetails.host.name}
+                                        />
+                                    </div>
+
+                                    <div className='renderRow'>
+
+                                        <div>
+                                            <Star rating={star}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='lastRow'>
-                                <div className='lastRowItemLeft'>
+                                <div className='lastRowItemLeft accordeonLeft' >
                                     <AccordeonDescription
                                         description={description}
                                     />
                                 </div>
-                                <div className='lastRowItemRight'>
+                                <div className='lastRowItemRight accordeonRight '>
                                     <AccordeonEquipment
                                         equip={equip}
                                     />
