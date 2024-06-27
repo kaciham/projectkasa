@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div className='page-settings'>
             <Navbar />
-            <div className='home page div-center'>
+            <div className='home page-info div-center'>
                 <div className='background-div'>
                     <h1 className='title'>Chez vous, partout et ailleurs</h1>
                 </div>

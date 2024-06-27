@@ -1,7 +1,8 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 30px 40px 30px;
+    margin: 30px 50px 30px;
+    height: 40px;
 }
 
 .navbar-item:hover {
@@ -41,10 +42,9 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .navbar-logo svg{
-        height: 100 px;
-        width: 100%;
+        width: 150%;
         flex-wrap: nowrap;
     }
 
@@ -65,8 +65,8 @@
     }
 
     .navbar-item{
-        margin: 0px 5px;
-        font-size: 16px;
+        margin: 0px 10px;
+        font-size: calc(0.8rem + 0.8vw);
         font-weight: 500;
     }
 

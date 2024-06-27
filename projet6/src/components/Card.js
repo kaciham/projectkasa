@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Card({ cover, title }) { //les cards de locations récupèrent les couvertures et titres en props depuis Home
+export default function Card({ cover, title }) {
 	return (
 		<article className="card">
 

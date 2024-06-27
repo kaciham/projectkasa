@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='about-main-page page-settings'>
             <Navbar />
-            <div className='page' >
+            <div className='page-info' >
                 <div className='background-div'>
                 </div>
                 <div className='test-margin'>

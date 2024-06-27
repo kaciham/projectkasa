@@ -51,7 +51,7 @@ const RentDetails = () => {
     return (
         <div>
             < Navbar />
-            <div key={params.id} className='rentDetails-container'>
+            <div key={params.id} className='rentDetails-container page'>
                 {
                     chosenRentDetails && (
                         <div key={params.id}>

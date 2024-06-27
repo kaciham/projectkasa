@@ -16,7 +16,7 @@ const Carrousel = ({ slides }) => {
     return (
         <div className="img-slider">
 
-            {length >= 1 && (
+            {length > 1 && (
                 <img
                     src={leftArrow} //Affichage des flèches seulement si length > 1
                     alt="gauche"
@@ -35,7 +35,7 @@ const Carrousel = ({ slides }) => {
                     }
                 >
                     {index === current && <img src={slide} className='img-slider' alt="appartement à louer" />}
-                    {index === current && (
+                    {index === current && length > 1 && (
                         <span className="slider__number index">
                             {current + 1}/{length}
                         </span>

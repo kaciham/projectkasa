@@ -35,7 +35,7 @@
     .rentDetails-container {
         display: flex;
         flex-direction: column;
-        
+        padding: 0px 15px;
     }
 
     .title-location{
@@ -64,5 +64,19 @@
         align-items: center;
         width: 100%;
         margin: 5px 0px;
+    }
+
+
+    .title-location h2 {
+        text-align: left;
+        color:#FF6060 ;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 20px 0px;
+    }
+
+    .title-location h3 {
+        font-size: 14px;
+        font-weight: 500;
     }
 }
