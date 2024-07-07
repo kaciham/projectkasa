@@ -87,8 +87,8 @@
         font-weight: 700;
         word-wrap:break-word;
         padding: 5px;
-        font-size: calc(0.5rem + 0.8vw);
-        margin: 5px 0px
+        font-size: calc(0.7rem + 0.8vw);
+        margin: 5px 5px
 
     }
     .card img:hover {
@@ -107,7 +107,8 @@
         }
 
         .card p {
-            font-size: 16px;
+            font-size: 1.2em;
+            margin: 0px 5px;
         }
 
     .home-menu {

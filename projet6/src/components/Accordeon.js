@@ -12,7 +12,8 @@ const Accordeon = ({ title, answer }) => {
 
     return (
         <div className='about-item'>
-            <div className='accordeon'>
+            <div className={`accordeon ${accordionOpen ? 'accordeon-nomargin' : ''}`}>
+
                 <h2 >
                     {title}
                 </h2>

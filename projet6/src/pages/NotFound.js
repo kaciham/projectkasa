@@ -18,7 +18,7 @@ const NotFound = () => {
                 </div>
                 <div className='center-div notfound-item'>
                     <NavLink to="/">
-                        <p className=''>Retouner sur la page d'Accueil</p>
+                        <p className='backpage'>Retouner sur la page d'Accueil</p>
                     </NavLink>
                 </div>
             </div>

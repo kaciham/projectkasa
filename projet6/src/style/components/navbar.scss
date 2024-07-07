@@ -1,12 +1,16 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 30px 50px 30px;
+    margin: 30px 5%;
     height: 40px;
 }
 
 .navbar-item:hover {
-    border-bottom: solid dark 2px;
+    border-bottom: solid black 2px;
+}
+
+.navbar-item::selection {
+    border-bottom: solid black 2px;
 }
 
 .navbar svg:nth-child(2){
