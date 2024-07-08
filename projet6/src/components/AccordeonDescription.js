@@ -13,7 +13,7 @@ const AccordeonDescription = ({ description }) => {
 
     return (
         <div className='about-item'>
-            <div className=' accordeon' >
+            <div className='accordeon' >
                 <h2 >
                     Description
                 </h2>
