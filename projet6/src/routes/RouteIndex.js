@@ -13,7 +13,7 @@ const RouteIndex = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
-                <Route path=":id" element={<RentDetails />} />
+                <Route path="/rent/:id" element={<RentDetails />} />
             </Routes>
         </BrowserRouter>
     );

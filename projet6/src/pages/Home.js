@@ -11,7 +11,7 @@ const Home = () => {
         fetch("logements.json").then((response => {
             return response.json()
         })).then((data) => {
-            console.log(data);
+
             setDataSet(data)
         })
     }
@@ -30,7 +30,7 @@ const Home = () => {
                 <div className='home-menu'>
                     {dataSet.map((dataFetched, id) => (
                         <div key={id}>
-                            <NavLink to={dataFetched.id}>
+                            <NavLink to={`/rent/${dataFetched.id}`}>
                                 < Card cover={dataFetched.cover} title={dataFetched.title} />
                             </NavLink>
                         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Accordeon = ({ title, answer }) => {
+const Accordeon = ({ title, content }) => {
     const [accordionOpen, setAccordionOpen] = useState(false);
     const [rotation, setRotation] = useState(0);
 
@@ -23,7 +23,7 @@ const Accordeon = ({ title, answer }) => {
             </div>
             <div className='test-margin'>
                 {accordionOpen && (
-                    <div className='text-accordeon' >{answer}</div>
+                    <div className='text-accordeon' >{content}</div>
                 )}
             </div>
         </div >
